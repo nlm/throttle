@@ -2,6 +2,7 @@ throttle
 ========
 
 Easily throttle command spawing in scripts
+
 [![Build Status](https://travis-ci.org/nlm/throttle.svg?branch=master)](https://travis-ci.org/nlm/throttle)
 
 usage
