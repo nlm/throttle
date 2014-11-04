@@ -66,7 +66,7 @@ thstate_t *readstate(int fd, thstate_t *state)
 
 void dumpstate(const thstate_t *state)
 {
-	printf("STATE: startts=%u, times=%u\n", state->startts, state->times);
+	printf("STATE: startts=%lu, times=%lu\n", (long)state->startts, (long)state->times);
 }
 
 int main(int argc, char **argv)
