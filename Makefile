@@ -7,6 +7,7 @@ THROTTLE_SRC=throttle.c
 TDUMP_BIN=tdump
 TDUMP_OBJ=tdump.o
 TDUMP_SRC=tdump.c
+INSTALL_DIR=/usr/local/bin
 
 
 all: $(THROTTLE_BIN) $(TDUMP_BIN)
@@ -24,3 +25,6 @@ clean:
 
 distclean: clean
 	rm -f $(THROTTLE_BIN) $(TDUMP_BIN)
+
+install: all
+	install $(THROTTLE_BIN) $(TDUMP_BIN) $(INSTALL_DIR)
